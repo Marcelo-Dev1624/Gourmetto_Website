@@ -123,6 +123,11 @@ nav li a:hover {
 /* Add media query for mobile viewport */
 @media (max-width: 767px) {
 
+  .logo{
+    width: auto;
+    height: 130%;
+    align-self: center;
+  }
 
   #menu {
     display: none;

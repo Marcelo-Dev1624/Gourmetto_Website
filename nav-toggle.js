@@ -15,12 +15,12 @@ navToggler.addEventListener("click", () => {
   if (dropdown.classList.contains("open")) {
     dropdown.classList.remove("open");
     nav.style.height = "65px";
-    logo.style.height = "auto";
-          logo.style.width = "auto";
+    logo.style.height = "130%";
+      logo.style.width = "auto";
   } else {
     dropdown.classList.add("open");
     nav.style.height = "250px";
-    logo.style.height = "auto";
+    logo.style.height = "130%";
           logo.style.width = "auto";
 
     if (dropdown.classList.contains("open")) {
@@ -33,7 +33,7 @@ navToggler.addEventListener("click", () => {
       dropdown.addEventListener("transitionend", () => {
         if (!dropdown.classList.contains("open")) {
           nav.style.height = "65px";
-          logo.style.height = "auto";
+          logo.style.height = "130%";
           logo.style.width = "auto";
         }
       });
