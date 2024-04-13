@@ -24,9 +24,10 @@ body {
 /* Navbar */
 
 .logo{
-  margin-left: 20px;
-  width:auto;
-  height: auto;
+    margin-left: 20px;
+    width: auto;
+    height: 130%;
+    align-self: center;
 }
 
 nav {
