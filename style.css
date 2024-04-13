@@ -1,0 +1,159 @@
+:root {
+  --primary-color: #272727;
+  --secondary-color: #eeeeee;
+  --third-color: #f0493f;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--primary-color);
+}
+
+/* Navbar */
+
+nav {
+  background-color: var(--primary-color);
+  padding: 20px 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+
+  width: 100%;
+  height: 65px;
+
+  transition: height 0.3s ease-out;
+}
+
+.active{ 
+  color: var(--third-color);
+}
+
+nav h1 {
+  color: #fff;
+  position: fixed;
+  margin-left: 20px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+nav h1:hover {
+  color: var(--third-color)
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  
+  display: inline-flex;
+  margin-left: auto;
+}
+nav li {
+  margin: 0 20px;
+}
+nav li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+nav li a:hover {
+  color: var(--third-color)
+}
+
+/* Toggler Button */
+.nav-toggler {
+  position: fixed;
+  right: 10px;
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+  margin-right: 20px;
+}
+
+.nav-toggler .bar {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: var(--secondary-color);
+  margin: 5px auto;
+  transition: 0.4s;
+}
+
+.nav-toggler.opened .bar:nth-child(1) {
+  opacity: 0;
+}
+
+.nav-toggler.opened .bar:nth-child(2) {
+  opacity: 1;
+  transform: rotate(45deg);
+}
+
+.nav-toggler.opened .bar:nth-child(3) {
+  transform: rotate(135deg) translate(-5px,5px);
+
+}
+
+/* Toggler Button */
+
+/* Add media query for mobile viewport */
+@media (max-width: 767px) {
+
+
+  #menu {
+    display: none;
+    opacity: 0;
+    
+    transition: height 0.3s ease-out;
+    animation-delay: 1s;
+    overflow: hidden;
+
+    margin-top: 3rem;
+  }
+
+  #menu.open {
+
+    opacity: 1;
+
+    display: inline-flex;
+    flex-direction: column;
+
+    
+  }
+
+  .menu-item{
+    opacity: 0;
+
+    text-align: right;
+
+    display: none;
+    height: 250px;
+    z-index: 10;
+
+    transition: opacity 1s ease-in-out;
+  }
+
+.visible {
+    opacity: 1;
+  }
+  
+
+  #navToggler {
+    display: block;
+  }
+}
+
+/* Navbar */
