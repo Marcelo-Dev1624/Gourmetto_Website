@@ -13,13 +13,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-        
+
     <title>Document</title>
 </head>
 
 <body>
     <nav>
-        <img class="logo" id="logo" src="/images/isotipo.png" alt="">
+        
+        <div class="logo-container">
+            <img class="logo" id="logo" src="/images/isotipo-blanco.png" alt="">
+
+            <a href="#">Gourmetto</a>
+        </div>
 
         <button id="navToggler" class="nav-toggler">
             <span class="bar"></span>
@@ -27,11 +32,19 @@
             <span class="bar"></span>
         </button>
 
-        <ul id="menu">
-            <li class="menu-item"><a class="active" href="">Home</a></li>
-            <li class="menu-item"><a href="">About</a></li>
-            <li class="menu-item"><a href="">Contact</a></li>
-        </ul>
+        <div class="menu-container" id="menu-container">
+            <ul id="menu">
+                <li class="menu-item"><a class="active" href="">Home</a></li>
+
+                <li class="menu-item"><a href="">About</a></li>
+
+                <li class="menu-item"><a href="">Contact</a></li>
+            </ul>
+        </div>
+
+        </div>
+
+
     </nav>
 
     <script src="nav-toggle.js"></script>

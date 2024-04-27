@@ -1,42 +1,17 @@
-// Get the nav toggler element and the nav element
-const navToggler = document.getElementById("navToggler");
-const dropdown = document.getElementById("menu");
-const nav = document.getElementsByTagName("nav")[0];
+const navToggler = document.getElementById('navToggler');
+const menuContainer = document.querySelector('#menu-container');
+const logo = document.getElementById('logo');
+let currentLogo = 'images/isotipo-blanco.png'; // Add this line
 
-const logo = document.getElementById("logo");
-
-const menuItems = document.querySelectorAll(".menu-item");
-
-// Add a click event listener to the nav toggler element
-navToggler.addEventListener("click", () => {
-  // Toggle the opened class on the nav toggler element
-  navToggler.classList.toggle("opened");
-
-  if (dropdown.classList.contains("open")) {
-    dropdown.classList.remove("open");
-    nav.style.height = "65px";
-    logo.style.height = "130%";
-      logo.style.width = "auto";
-  } else {
-    dropdown.classList.add("open");
-    nav.style.height = "250px";
-    logo.style.height = "130%";
-          logo.style.width = "auto";
-
-    if (dropdown.classList.contains("open")) {
-      menuItems.forEach((menuItems) => {
-        menuItems.style.display = "block";
-        menuItems.style.opacity = "1";
-      });
-      
-
-      dropdown.addEventListener("transitionend", () => {
-        if (!dropdown.classList.contains("open")) {
-          nav.style.height = "65px";
-          logo.style.height = "130%";
-          logo.style.width = "auto";
+navToggler.addEventListener('click', () => {
+    navToggler.classList.toggle('opened');
+    menuContainer.classList.toggle('open');
+    setTimeout(() => {
+        if (currentLogo === 'images/isotipo-blanco.png') {
+            currentLogo = 'images/isotipo-negro.png';
+        } else {
+            currentLogo = 'images/isotipo-blanco.png';
         }
-      });
-    }
-  }
+        logo.src = currentLogo;
+    }, 100); // Change the delay time here (in milliseconds)
 });
