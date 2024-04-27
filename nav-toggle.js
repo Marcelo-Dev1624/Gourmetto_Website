@@ -6,6 +6,10 @@ let currentLogo = 'images/isotipo-blanco.png'; // Add this line
 navToggler.addEventListener('click', () => {
     navToggler.classList.toggle('opened');
     menuContainer.classList.toggle('open');
+    /*
+
+    NOT GONNA USE THIS AT THE MOMENT
+    
     setTimeout(() => {
         if (currentLogo === 'images/isotipo-blanco.png') {
             currentLogo = 'images/isotipo-negro.png';
@@ -14,4 +18,6 @@ navToggler.addEventListener('click', () => {
         }
         logo.src = currentLogo;
     }, 100); // Change the delay time here (in milliseconds)
+
+    */
 });

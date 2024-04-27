@@ -58,7 +58,6 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   margin-left: 20px;
   cursor: pointer;
 
@@ -87,8 +86,6 @@ nav ul {
   justify-self: center;
   align-items: center;
   height: 100%;
-
-  margin-right: 15px;
 }
 
 .menu-item {
@@ -159,30 +156,30 @@ nav li a:hover {
 
   .logo-container {
     width: 55%;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    flex-direction: row-reverse;
-    margin-left: 0;
+    flex-direction: row;
   }
 
   .logo {
-    width: 50px;
+    width: 40px;
     height: auto;
     z-index: 100;
 
   }
 
   .logo-container a {
-    width: auto;
+    /*width: auto;
     margin-left: 15px;
-    font-size: 16px;
+    font-size: 16px;*/
+    display: none;
   }
 
   .menu-container {
     position: fixed;
     top: 0;
     right: -325px;
-    width: 300px;
+    width: 200px;
     height: 100%;
     background-color: var(--secondary-color);
 
