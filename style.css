@@ -31,7 +31,7 @@ nav {
   align-items: center;
 
   width: 100%;
-  height: 65px;
+  height: 80px;
 
   transition: height 0.3s ease-out;
 }
@@ -47,7 +47,7 @@ nav {
 nav ul {
   list-style: none;
   text-align: center;
-  height: auto;
+  height: 100%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -56,7 +56,7 @@ nav ul {
 
 .logo-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-left: 0;
   cursor: pointer;
@@ -66,27 +66,18 @@ nav ul {
 }
 
 .logo {
-  width: 40px;
+  width: 150px;
   height: auto;
-  margin-right:15px;
+margin-left: 25px;
 }
 
-.logo-container a {
-  font-weight: 500;
-  text-decoration: none ;
-  color: var(--secondary-color);
-  transition: 300ms ease-out;
-}
-
-.logo-container a:hover {
-  color: var(--third-color);
-}
 
 .menu-container {
   display: inline-flex;
   justify-self: center;
   align-items: center;
   height: 100%;
+  margin-right: 20px;
 }
 
 .menu-item {
@@ -100,7 +91,7 @@ nav ul {
 nav li a {
   text-decoration: none;
   color: var(--secondary-color);
-  font-size: 20px;
+  font-size: 24px;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -163,19 +154,13 @@ nav li a:hover {
   }
 
   .logo {
-    width: 40px;
+    width: 125px;
     height: auto;
     z-index: 100;
     margin-left: 20px;
 
   }
 
-  .logo-container a {
-    /*width: auto;
-    margin-left: 15px;
-    font-size: 16px;*/
-    display: none;
-  }
 
   .menu-container {
     position: fixed;
@@ -198,6 +183,7 @@ nav li a:hover {
   #menu {
     position: absolute;
     top: 80px;
+    height: auto;
     right: 0;
     flex-direction: column;
     visibility: none;
