@@ -95,6 +95,10 @@ nav {
   color: var(--third-color);
 }
 
+.socials-mobile-menu{
+  display: none;
+}
+
 
 /* Add media query for mobile viewport */
 @media (max-width: 767px) {
@@ -217,6 +221,7 @@ nav {
 
   .socials-mobile-menu{
     position: absolute;
+    display: block;
     top: 700px;
     width: 100%;
     height: auto;
