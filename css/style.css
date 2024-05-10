@@ -36,6 +36,7 @@ nav {
   height: 5rem;
 
   transition: height 0.3s ease-out;
+  animation: none;
 }
 
 #navToggler {
@@ -107,6 +108,18 @@ nav {
   color: var(--secondary-color);
 }
 
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 50vh;
+  margin-top: 5rem;
+  background-size: cover;
+
+}
+
 
 /*PRODUCTS SECTION*/
 
@@ -117,20 +130,14 @@ nav {
   flex-direction: column;
   min-height: 100vh;
   margin-bottom: 3rem;
+
 }
+
 .products-header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  min-height: 50vh;
-  margin-top: 5rem;
   background: url(../images/headers/header-productos.png);
   background-size: cover;
 
 }
-
 .products-container {
   display: flex;
   justify-content: center;
@@ -230,6 +237,18 @@ nav {
 .product-pricing-container button:hover{
   background-color: var(--secondary-color);
   color: var(--third-color);
+}
+
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 
