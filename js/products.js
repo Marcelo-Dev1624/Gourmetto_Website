@@ -34,7 +34,7 @@ const products = dataProductos.map(([photo,name, description, weight,price]) => 
         </div>
         <div class="product-pricing-container">
           <h3>${product.price}</h3>
-          <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+          <button class="btn product-pricing-container-btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
         </div>
       </div>
     `;
