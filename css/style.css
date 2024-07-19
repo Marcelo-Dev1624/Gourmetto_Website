@@ -14,6 +14,7 @@
   cursor: pointer;
   transition: 200ms ease-in-out;
   font-family: "Montserrat", sans-serif;
+  margin: 1rem 0;
 }
 
 .btn-size:hover {
@@ -286,18 +287,14 @@ p {
   gap: 1rem;
 }
 
-.home-header h1 {
-  font-size: 60px;
-  color: var(--secondary-color);
-  filter: drop-shadow(var(--primary-color) 0px 3px 10px);
-  margin: 10px;
-}
+.home-header-text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  justify-content: center;
+  align-items: flex-start;
 
-.home-header p {
-  font-size: 22px;
-  color: var(--secondary-color);
-  filter: drop-shadow(var(--primary-color) 0px 3px 10px);
-  margin-bottom: 40px;
 }
 
 .home-header-btn:hover {
@@ -435,6 +432,52 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
+  .img-mobile-10 {
+    width: 10%;
+    height: 10%;
+  }
+  .img-mobile-20 {
+    width: 20%;
+    height: 20%;
+  }
+  
+  .img-mobile-30 {
+    width: 30%;
+    height: 30%;
+  }
+  
+  .img-mobile-40 {
+    width: 40%;
+    height: 40%;
+  }
+  
+  .img-mobile-50 {
+    width: 50%;
+    height: 50%;
+  }
+  
+  .img-mobile-60 {
+    width: 60%;
+    height: 60%;
+  }
+  
+  .img-mobile-70 {
+    width: 70%;
+    height: 70%;
+  }
+  .img-mobile-80 {
+    width: 80%;
+    height: 80%;
+  }
+  .img-mobile-90 {
+    width: 90%;
+    height: 90%;
+  }
+  .img-mobile-100 {
+    width: 100%;
+    height: 100%;
+  }
+
   .btn-size.small.mobile-full {
     width: 100%;
   }
@@ -663,9 +706,7 @@ p {
     width: 80%;
   }
 
-  .home-header img {
-    width: 75%;
-  }
+ 
 
   #products-section {
     display: flex;
