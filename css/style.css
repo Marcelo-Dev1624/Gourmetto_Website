@@ -418,13 +418,13 @@ p {
   }
 
   .mobile-column{
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
   }
 
   .mobile-reverse-column{
-    display: flex;
-    flex-direction: column-reverse;
+    display: flex !important;
+    flex-direction: column-reverse !important;
   }
 
   /* Toggler Button */
@@ -621,23 +621,19 @@ p {
 
 
   .home-header-text h1 {
-    font-size: 44px;
+    font-size: 38px;
   }
 
   .home-header-text p {
-    font-size: 24px;
-    width: 75%;
+    font-size: 20px;
+    width: 80%;
   }
 
   .home-header img {
-    width: 90%;
+    width: 75%;
   }
 
-  h1 {
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-  }
+
 
   #products-section {
     display: flex;
