@@ -279,8 +279,13 @@ p {
 
 .home-header {
   background: url(../images/headers/desktop/home-banner\ -\ 3.png);
+
+    /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
   text-align: center;
   padding: 50px;
   flex-direction: row;
