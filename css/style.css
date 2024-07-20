@@ -28,7 +28,7 @@
   cursor: pointer;
   transition: 200ms ease-in-out;
   font-family: "Montserrat", sans-serif;
-  margin: 1rem 0;
+  margin: .75rem 0;
 }
 
 .btn-primary{
@@ -41,23 +41,39 @@
   color: var(--secondary-color);
 
 }
-.btn-secondary{
+.btn-secondary-white-hover{
   background-color: var(--primary-color);
   color: var(--secondary-color);
 
 }
-.btn-third{
+.btn-third-white-hover{
   background-color: var(--third-color);
   color: var(--secondary-color);
 
 }
-
-.btn-secondary:hover, .btn-third:hover{
+.btn-secondary-white-hover:hover, .btn-third-white-hover:hover{
   background-color: var(--secondary-color);
   color: var(--primary-color);
+}
+
+.btn-secondary-dark-hover{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+
+}
+.btn-third-dark-hover{
+  background-color: var(--third-color);
+  color: var(--secondary-color);
+
+}
+.btn-secondary-dark-hover:hover, .btn-third-dark-hover:hover{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 
 
 }
+
+
 
 
 
@@ -336,8 +352,36 @@ p {
   flex-direction: row;
   gap: 1rem;
 }
+.products-header {
+  background: url(../images/headers/desktop/home-banner\ -\ 3.png);
 
-.home-header-text{
+    /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  text-align: center;
+  padding: 50px;
+  flex-direction: row;
+  gap: 1rem;
+}
+.contact-header {
+  background: url(../images/headers/desktop/home-banner\ -\ 2.png);
+
+    /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  text-align: center;
+  padding: 50px;
+
+  gap: 1rem;
+}
+
+.header-text{
   display: flex;
   flex-direction: column;
   text-align: center;
