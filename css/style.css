@@ -677,7 +677,7 @@ p {
     justify-content: center;
     align-items: center;
 
-    transition: right 0.3s ease-in-out;
+    transition: right 0.15s ease-in-out;
     border-radius: 5px 0 0 5px;
   }
 
@@ -692,8 +692,7 @@ p {
     height: auto;
     flex-direction: column;
     visibility: none;
-    transition: visibility 0.3s ease-out;
-    animation-delay: 1s;
+    transition: visibility 0.1s ease-out;
     padding: 0;
   }
 
