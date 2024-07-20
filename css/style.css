@@ -5,6 +5,20 @@
   --third-color: #f0493f;
 }
 
+.primary{
+  color:var(--primary-color);
+}
+.primary-dark{
+  color:var(--primary-color-dark);
+}
+.secondary{
+  color:var(--secondary-color);
+}
+.third{
+  color:var(--third-color);
+}
+
+
 .btn-size {
   padding: 0.5rem 1rem;
   font-size: 1rem;
@@ -17,10 +31,35 @@
   margin: 1rem 0;
 }
 
-.btn-size:hover {
+.btn-primary{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+
+}
+.btn-primary:hover{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+
+}
+.btn-secondary{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+
+}
+.btn-third{
   background-color: var(--third-color);
   color: var(--secondary-color);
+
 }
+
+.btn-secondary:hover, .btn-third:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+
+
+}
+
+
 
 .btn-size.small {
   padding: 0.6rem 0.75rem;
@@ -266,6 +305,10 @@ p {
   width: 90%;
   height: 90%;
 }
+.img-100 {
+  width: 100%;
+  height: 100%;
+}
 
 .header {
   display: flex;
@@ -276,6 +319,8 @@ p {
   min-height: 70vh;
   background-size: cover;
 }
+
+/* HOME HEADER STARTS*/
 
 .home-header {
   background: url(../images/headers/desktop/home-banner\ -\ 3.png);
@@ -302,9 +347,10 @@ p {
 
 }
 
-.home-header-btn:hover {
-  background-color: var(--primary-color);
-}
+
+/* HOME HEADER ENDS*/
+
+/* ABOUT US STARTS*/
 
 .about-us-section {
   display: flex;
@@ -314,7 +360,19 @@ p {
   padding: 20px;
 }
 
-/*PRODUCTS SECTION*/
+/* ABOUT US ENDS*/
+
+/* HOME GALLERY STARTS*/
+
+#home-gallery{
+  background-color: var(--secondary-color);
+  background: url(../images/headers/desktop/home-banner\ -\ 2.png);
+}
+
+/* HOME GALLERY ENDS*/
+
+
+/*PRODUCTS PAGE*/
 
 #products-section {
   display: flex;
