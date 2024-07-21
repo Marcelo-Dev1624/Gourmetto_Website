@@ -18,6 +18,10 @@
   color:var(--third-color);
 }
 
+a{
+  text-decoration: none;
+}
+
 
 .btn-size {
   padding: 0.5rem 1rem;
@@ -352,8 +356,8 @@ p {
   flex-direction: row;
   gap: 1rem;
 }
-.products-header {
-  background: url(../images/headers/desktop/home-banner\ -\ 3.png);
+.product-header {
+  background: url(../images/headers/desktop/home-banner\ -\ 1.png);
 
     /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -424,13 +428,17 @@ p {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  margin-bottom: 3rem;
+  padding-top: 5rem;
+
+  background: url(../images/headers/desktop/home-banner\ -\ 1.png);
+
+  /* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 }
 
-.products-header {
-  background: url(../images/headers/header-productos.png);
-  background-size: cover;
-}
 .products-container {
   display: flex;
   justify-content: center;
