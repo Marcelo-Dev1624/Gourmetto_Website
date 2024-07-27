@@ -345,9 +345,7 @@ p {
   flex-direction: row;
   gap: 1rem;
 
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0%;
+
 }
 .product-header {
   background: url(../images/headers/desktop/home-banner\ -\ 1.png);
@@ -395,6 +393,9 @@ p {
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
+  -webkit-animation: appear linear;
+  -webkit-animation-timeline: view();
+  -webkit-animation-range: entry 0% cover 20%;
 }
 
 /* SECTION CONOCENOS  ENDS*/
@@ -410,6 +411,9 @@ p {
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 25%;
+  -webkit-animation: appear linear;
+  -webkit-animation-timeline: view();
+  -webkit-animation-range: entry 0% cover 25%;
 }
 
 /* HOME GALLERY ENDS*/
@@ -454,6 +458,9 @@ p {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   padding: 0;
 
+  -webkit-animation: appear linear;
+  -webkit-animation-timeline: view();
+  -webkit-animation-range: entry 0% cover 15%;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 15%;
