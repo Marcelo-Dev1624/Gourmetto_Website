@@ -5,6 +5,16 @@ const dataProductos = [
     ['images/products/cebollas_encurtidas.jpg','Cebollas Encurtidas', 'Descripcion', '220g','$5'],
     ['images/products/pesto_tomate.jpg','Pesto de Tomates', 'Descripcion', '220g','$5'],
     ['images/products/higos.jpg','Mermelada de Higos', 'Descripcion', '220g','$5'],
+
+    
+    ['images/bowl.png','Pesto Tradicional', 'Delicioso pesto en su receta tradicional', '220g','$5'],
+    ['images/products/cebollas_encurtidas.jpg','Cebollas Encurtidas', 'Descripcion', '220g','$5'],
+    ['images/products/pesto_tomate.jpg','Pesto de Tomates', 'Descripcion', '220g','$5'],
+    ['images/products/higos.jpg','Mermelada de Higos', 'Descripcion', '220g','$5'],
+    ['images/bowl.png','Pesto Tradicional', 'Delicioso pesto en su receta tradicional', '220g','$5'],
+    ['images/products/cebollas_encurtidas.jpg','Cebollas Encurtidas', 'Descripcion', '220g','$5'],
+    ['images/products/pesto_tomate.jpg','Pesto de Tomates', 'Descripcion', '220g','$5'],
+    ['images/products/higos.jpg','Mermelada de Higos', 'Descripcion', '220g','$5'],
    
     
 ]
